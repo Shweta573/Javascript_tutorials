@@ -26,9 +26,12 @@ const bigNumber=7564235698n //representation of big integer
 
 const isnames=['Rajat','Shweta','Twinkle','Princy'] //array represenation of names
 
-const myFunction=()=>{} //function representation
-
-let obj={ //object representation
+let obj={              //object representation
     name:"Shweta",
     age:24,
 }
+
+const myname=function(){ 
+    console.log("Hello World")
+}                          //function representation
+
