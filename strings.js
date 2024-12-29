@@ -5,7 +5,7 @@ const repocount=50
 console.log(name   +  repocount  + "Value" ) // Shweta50Value
 
 //Way 2 :
-console.log("Hello my name is ${name} and my repo count is ${repocount}"); // Hello my name is ${name} and my repo count is ${repocount}
+console.log(`Hello my name is ${name} and my repo count is ${repocount}`); // Hello my name is Shweta and my repo count is 50
 
 //way 3:
 const gameName = new String("hiteshhic-hc-com")
