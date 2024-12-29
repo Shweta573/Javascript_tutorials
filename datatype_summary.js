@@ -18,7 +18,7 @@ console.log(typeof myhobby) //undefined
 
 const firstid =Symbol('123')
 const anotherId =Symbol('123')
-console.log(firstid === anotherId) //false
+console.log(firstid === anotherId) //(false) The purpose of Symbol is to provide unique keys or values
 
 const bigNumber=7564235698n //representation of big integer
 
