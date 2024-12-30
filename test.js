@@ -1,7 +1,7 @@
 const accountId = 1432368
 let accountEmail = "shweta@google.com"
 var accountPassword = "12345"
-accountCity = "Jaipur"
+accountCity = "Jaipur" // we can declare any variable without any keyword as well
 
 /* accountId = 21648 
 */
