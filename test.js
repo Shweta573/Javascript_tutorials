@@ -1,5 +1,6 @@
 const accountId = 1432368
 let accountEmail = "shweta@google.com"
+let accountEmail = "rajat@gmail.com" // we cannot  update the value of a same variable instead we need to update the varible name but using var keyord we can do it.
 var accountPassword = "12345"
 accountCity = "Jaipur" // we can declare any variable without any keyword as well
 
