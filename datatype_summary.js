@@ -31,7 +31,10 @@ let obj={              //object representation
     age:24,
 }
 
+// function representation
 const myname=function(){ 
     console.log("Hello World")
-}                          //function representation
+}   
+myname() // Hello World
+
 
