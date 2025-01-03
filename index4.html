@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shweta | DOM </title>
+</head>
+<body style ="background-color:#212121; color:#fff;">
+    <ul class = "language">
+        <li> Javascript </li>
+    </ul>
+
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langname}`  
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addlanguage("typescript")
+
+    function addOptiLanguage(langname){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("Ruby")
+
+
+    // Edit element: (Way 1)
+    const secondLang = document.querySelector("li:nth-child(2)")
+    secondLang.innerHTML = "Mojo"
+    console.log(secondLang);
+
+    // (Way 2:)
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli) 
+
+    //(Way 3:)
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove elements:
+    const LangName = document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>   
+</html>
