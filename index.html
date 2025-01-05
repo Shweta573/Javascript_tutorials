@@ -1,0 +1,88 @@
+
+<!-- Various HTML tags
+ i) <style> - It connects HTML with CSS </style
+ii) <script> - It connects HTML with Javascript </script>
+iii) to link css with HTML :
+ <link rel ="stylesheet" href = "style.css">
+ iv) to  link HTML with js
+ <script src="script.js"
+
+ Window object :It represents an open window in a browser.It is browser's object & is automatically created by browser.
+It is a global object
+
+When we write console in broswer , a window object is automatically created
+
+console.log is a part of it and our JS code is already aware without mentioning window.console.log 
+
+DOM: When the HTML code can be accessed inside a javascript which is avaialble in the form of document is called DOM
+It is apart of window object
+
+console.log.dir - It is used to print the methods & properties  of a document .It is a part of window object
+
+If we link javascript file inside the head tag instead of body then the value of document will be null.
+
+DOM Manipulation:
+i) Selecting with id : When we provide a unique id to the html elements.
+document.getElementById("myId") ,it is represented with #symbol inside css file to make change
+Note : If the element inside the id does not exist it will return null
+
+ii) Selecting with class 
+document.getElementById("myclass"),it can be accessed with .symbol inside css file .It returns HTML collection similar to array
+Note : If the class name does not exist then it will return an empty HTML collection 
+
+iii) Selecting with tag name : 
+document.getelementsByTagName("p")
+Note: If the tag name does not exist then it will return an empty HTML collection 
+
+iv) Query Selector:
+doument.querySelector("p") ;It returns the first element corresponding to that tag
+
+v) Query SelectorAll:
+doument.querySelectorAll("p") ; It returns a nodelist of all the elements matching that tag ; 
+
+vi) tagName: returns tag for element nodes
+ex: headings.tagName // 'H1' 
+
+vii) innerText : returns the text content of the element and all its children 
+ex: headings.innerText // 'DOM DEMO by Apna College'
+
+viii) innerHTML : returns the plain text or HTML content in  the element
+
+Types of nodes in DOM:
+i)text nodes ; we generally ignore these nodes (text & element) thus mainly focuses on element nodes
+ii) comment nodes
+iii) element nodes
+
+We can access the children of child node of a parent node:
+//document.querySelector(div).children; // HTMLCollection(0) because div parent have no child 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Query Selector </title>
+    <link rel ="stylesheet" href ="dom.css">
+</head>
+
+<body>
+    <div> abcd 67890  </div>
+
+    <h1  id ="heading"></id> DOM  DEMO by Apna College </h1>
+    <h1  id =" heading1"> Javascript </h1>
+    <h4> Topic 1 : Starter Code </h4> 
+    
+    <h1 class ="heading-class">  DOM  DEMO by Apna College </h1>
+    <h1 class ="heading-class"> Javascript </h1>
+    <h4 class = "heading-class"> Topic 1 : Starter Code </h4> 
+
+
+    <p> Let's learn about DOM concepts in details </p>
+    <p> I want to learn CSS in details </p>
+    <button> Click  me button! </button>
+    <script src = "DOM.js"></script>   
+</body>
+</html>
+
+
+

@@ -1,0 +1,29 @@
+#heading{
+    color: green;
+    background-color: yellow; /* No changes can be seen in h1 (Javascript) because the id is dofferent for it */
+}
+
+
+.heading-class{
+    color: green;
+    background-color: yellow;
+
+}
+
+p{
+    color:blue
+}
+
+/*h1 {
+    color : green;   
+}
+*/
+
+body{
+    background-color: pink;
+}
+
+button{
+    background-color: blue;
+    color:white
+}
